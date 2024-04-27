@@ -1,0 +1,113 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #ffe5ec;
+    font-size: 18px;
+    margin: 0;
+    line-height: 1.4;
+}
+
+.container {
+    max-width: 780px;
+    margin: 0 auto;
+    background-color: #cdb4db;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(252, 248, 248, 0.1);
+}
+
+header {
+    text-align: center;
+}
+
+#title {
+    color: #333;
+    margin-bottom: 10px;
+}
+
+#description {
+    font-style: italic;
+    color: #5c5a5a;
+}
+
+form {
+    margin-top: 20px;
+}
+
+label {
+    display: inline-block;
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+
+#label-checkbox, #label-radio {
+    display: block;
+}
+
+input,
+select,
+textarea {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    box-sizing: border-box;
+    max-width: 100%;
+    max-height: 400px;
+    border-radius: 7px;
+    border: 1px solid #ccc;
+}
+
+textarea {
+    font-size: 16px;
+}
+
+input:focus {
+    outline: none;
+    border-color: #007BFF;
+    box-shadow: 0 0 10px rgba(0, 123, 255, 0.4);
+}
+
+button {
+    background-color: #007BFF;
+    color: #fff;
+    padding: 10px 25px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    width: 100%;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+footer {
+    margin-top: 20px;
+    border-top: 1px solid #ccc;
+    padding-top: 10px;
+    text-align: center;
+    color: #666;
+    font-style: italic;
+}
+
+/* Additional Styles for Radio Buttons and Checkboxes */
+#div-radio,
+#div-checkbox {
+    margin-bottom: 10px;
+}
+
+input[type="radio"],
+input[type="checkbox"] {
+    margin-right: 5px;
+    width: auto;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 600px) {
+    .container {
+        padding: 10px;
+    }
+    textarea {
+        width: 100%;
+    }
+}
+

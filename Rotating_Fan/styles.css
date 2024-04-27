@@ -1,0 +1,50 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #1e1c27;
+}
+
+img {
+    border: 20px solid aqua;
+    padding: 50px;
+    border-radius: 50%;
+    animation: fananim linear infinite 2s;
+}
+@keyframes fananim {
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+button {
+    width: 100px;
+    height: 100px;
+    padding: 20px 30px;
+    margin: 0 20px;
+    font-size: 25px;
+    font-weight: 560;
+    border: none;
+    background-color: silver;
+    border-radius: 50%;
+    transition: 0.1s;
+}
+
+.container button:nth-last-child(5) {
+    background-color: #24b053;
+}
+.container button:nth-last-child(4) {
+    background-color: #cf1a1a;
+}
+
+button:active {
+    box-shadow: 0px 10px 10px black;
+    transform: scale(0.95);
+}

@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <h1 id="title">SunGj Survey Form</h1>
+            <p id="description">Thank you for taking your time to help us improve the platform&diams;</p>
+        </header>
+        <main>
+            <form action="" id="survey-form">
+                <div id="div-name">
+                    <label id="name-label" for="name">Name</label>
+                    <input type="text" id="name" placeholder="Enter your name: " required>
+                </div>
+                <div id="div-email">
+                    <label id="email-label" for="email">E-mail</label>
+                    <input type="email" id="email" placeholder="Enter your E-mail: " required>
+                </div>
+                <div id="div-password">
+                    <label id="password-label" for="pwd">Password</label>
+                    <input type="password" id="pwd" placeholder="Enter your password: " required>
+                </div>
+                <div id="div-age">
+                    <label id="number-label" for="number">Age</label>
+                    <input type="number" id="number" min="1" max="100" placeholder="Enter your age: " required>
+                </div>
+                <div id="div-selection">
+                    <label id="label-dropdown" for="dropdown">Which range of height you are?</label>
+                    <select name="select-height" id="dropdown" required>
+                        <option value="">Select your height</option>
+                        <option value="1">Less than 150cm</option>
+                        <option value="2">150cm ~ 170cm</option>
+                        <option value="3">170cm ~ 190cm</option>
+                        <option value="4">More than 190cm</option>
+                    </select>
+                </div>
+                <div id="div-radio">
+                    <label id="label-radio" for="radio">Which option best describes your current role?</label>
+                    <input type="radio" name="radio" id="opt1" value="option1" checked>
+                    <label id="label-opt1" for="opt1">Option 1</label>
+                    <input type="radio" name="radio" id="opt2" value="option2">
+                    <label id="label-opt2" for="opt2">Option 2</label>
+                    <input type="radio" name="radio" id="opt3" value="option3">
+                    <label id="label-opt3" for="opt3">Option 3</label>
+                </div>
+                <div id="div-checkbox">
+                    <label id="label-checkbox" for="checkbox">Would you recommend freeCodeCamp to a friend?</label>
+                    <input type="checkbox" name="checkbox" id="check1" value="check1">
+                    <label id="label-check1" for="check1">Definitely</label>
+                    <input type="checkbox" name="checkbox" id="check2" value="check2">
+                    <label id="label-check2" for="check2">Maybe</label>
+                    <input type="checkbox" name="checkbox" id="check3" value="check3">
+                    <label id="label-check3" for="check3">Not sure</label>
+                </div>
+                <div id="div-textarea">
+                    <label id="label-textarea" for="textarea">What is your favorite feature of freeCodeCamp?</label>
+                    <textarea name="textarea" id="comment" cols="77" rows="10"
+                        placeholder="Enter your comment here..."></textarea>
+                </div>
+                <div id="submit-button">
+                    <button type="submit" id="submit">Submit</button>
+                </div>
+            </form>
+        </main>
+        <footer>
+            <p>&copy; 2024 Sungj All rights reserved.</p>
+        </footer>
+    </div>
+</body>
+
+</html>
